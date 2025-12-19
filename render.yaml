@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: minoremc
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /ping
