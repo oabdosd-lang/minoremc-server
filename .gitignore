@@ -133,7 +133,26 @@ dist
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+
+# ========== MinoreMC Minecraft Server ==========
+
+# Minecraft Bedrock Server files
+worlds/
+world*/
+behavior_packs/
+resource_packs/
+development_behavior_packs/
+development_resource_packs/
+premium_world/
+structures/
+minecraftWorlds/
+
+# Server runtime files
+bedrock_server.log
+debug/
+whitelist.json
+permissions.json
